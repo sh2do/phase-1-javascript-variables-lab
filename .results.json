@@ -1,0 +1,149 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 6,
+    "passes": 2,
+    "pending": 0,
+    "failures": 4,
+    "start": "2025-09-02T13:19:20.983Z",
+    "end": "2025-09-02T13:19:21.849Z",
+    "duration": 866
+  },
+  "tests": [
+    {
+      "title": "is set as Scuber",
+      "fullTitle": "index.js Scuber is set as Scuber",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'companyName' to equal 'Scuber'",
+        "showDiff": true,
+        "actual": "companyName",
+        "expected": "Scuber",
+        "stack": "AssertionError: expected 'companyName' to equal 'Scuber'\n    at Context.<anonymous> (test/indexTest.js:11:32)\n    at process.processImmediate (node:internal/timers:485:21)"
+      }
+    },
+    {
+      "title": "is defined as a const",
+      "fullTitle": "index.js Scuber is defined as a const",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "is declared as equal to Chelsea",
+      "fullTitle": "index.js mostProfitableNeighborhood is declared as equal to Chelsea",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'mostProfitableNeighborhood' to equal 'Chelsea'",
+        "showDiff": true,
+        "actual": "mostProfitableNeighborhood",
+        "expected": "Chelsea",
+        "stack": "AssertionError: expected 'mostProfitableNeighborhood' to equal 'Chelsea'\n    at Context.<anonymous> (test/indexTest.js:24:47)\n    at process.processImmediate (node:internal/timers:485:21)"
+      }
+    },
+    {
+      "title": "is defined using let",
+      "fullTitle": "index.js mostProfitableNeighborhood is defined using let",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "is declared as equal to Susan Smith",
+      "fullTitle": "index.js companyCeo is declared as equal to Susan Smith",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'companyCeo' to equal 'Susan Smith'",
+        "showDiff": true,
+        "actual": "companyCeo",
+        "expected": "Susan Smith",
+        "stack": "AssertionError: expected 'companyCeo' to equal 'Susan Smith'\n    at Context.<anonymous> (test/indexTest.js:37:31)\n    at process.processImmediate (node:internal/timers:485:21)"
+      }
+    },
+    {
+      "title": "is defined using let",
+      "fullTitle": "index.js companyCeo is defined using let",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "Expected companyCeo to be defined using let: expected 'require(\"./helpers.js\");\\n\\nconst fs = require(\"fs\");\\nconst path = require(\"path\");\\n\\nconst js = fs.readFileSync(path.resolve(__dirname, \"..\", \"index.js\"), \"utf-8\");\\n\\ndescribe(\"index.js\", function () {\\n  describe(\"companyName\", function () {\\n    it(\"is set as Scuber\", function () {\\n      expect(\"companyName\").to.equal(\"Scuber\");\\n    });\\n\\n    it(\"is defined as a const\", function () {\\n      expect(js).to.match(\\n        /const companyName = \\'Scuber\\'/,\\n        \"Expected companyName to be a const\"\\n      );\\n    });\\n  });\\n\\n  describe(\"mostProfitableNeighborhood\", function () {\\n    it(\"is declared as equal to Chelsea\", function () {\\n      expect(\"mostProfitableNeighborhood\").to.equal(\"Chelsea\");\\n    });\\n\\n    it(\"is defined using let\", function () {\\n      expect(js).to.match(\\n        /let mostProfitableNeighborhood = \\'Chelsea\\'/,\\n        \"Expected mostProfitableNeighborhood to be defined using let\"\\n      );\\n    });\\n  });\\n\\n  describe(\"companyCeo\", function () {\\n    it(\"is declared as equal to Susan Smith\", function () {\\n      expect(\"companyCeo\").to.equal(\"Susan Smith\");\\n    });\\n\\n    it(\"is defined using let\", function () {\\n      expect(js).to.match(\\n        /let =\\'companyCeo\\'/,\\n        / const = \\'Susan Smith\\'/,\\n        \"Expected companyCeo to be defined using let\"\\n      );\\n    });\\n  });\\n});\\n' to match /const ='Susan Smith'/",
+        "showDiff": false,
+        "actual": "require(\"./helpers.js\");\n\nconst fs = require(\"fs\");\nconst path = require(\"path\");\n\nconst js = fs.readFileSync(path.resolve(__dirname, \"..\", \"index.js\"), \"utf-8\");\n\ndescribe(\"index.js\", function () {\n  describe(\"companyName\", function () {\n    it(\"is set as Scuber\", function () {\n      expect(\"companyName\").to.equal(\"Scuber\");\n    });\n\n    it(\"is defined as a const\", function () {\n      expect(js).to.match(\n        /const companyName = 'Scuber'/,\n        \"Expected companyName to be a const\"\n      );\n    });\n  });\n\n  describe(\"mostProfitableNeighborhood\", function () {\n    it(\"is declared as equal to Chelsea\", function () {\n      expect(\"mostProfitableNeighborhood\").to.equal(\"Chelsea\");\n    });\n\n    it(\"is defined using let\", function () {\n      expect(js).to.match(\n        /let mostProfitableNeighborhood = 'Chelsea'/,\n        \"Expected mostProfitableNeighborhood to be defined using let\"\n      );\n    });\n  });\n\n  describe(\"companyCeo\", function () {\n    it(\"is declared as equal to Susan Smith\", function () {\n      expect(\"companyCeo\").to.equal(\"Susan Smith\");\n    });\n\n    it(\"is defined using let\", function () {\n      expect(js).to.match(\n        /let ='companyCeo'/,\n        / const = 'Susan Smith'/,\n        \"Expected companyCeo to be defined using let\"\n      );\n    });\n  });\n});\n",
+        "stack": "AssertionError: Expected companyCeo to be defined using let: expected 'require(\"./helpers.js\");\\n\\nconst fs = require(\"fs\");\\nconst path = require(\"path\");\\n\\nconst js = fs.readFileSync(path.resolve(__dirname, \"..\", \"index.js\"), \"utf-8\");\\n\\ndescribe(\"index.js\", function () {\\n  describe(\"companyName\", function () {\\n    it(\"is set as Scuber\", function () {\\n      expect(\"companyName\").to.equal(\"Scuber\");\\n    });\\n\\n    it(\"is defined as a const\", function () {\\n      expect(js).to.match(\\n        /const companyName = \\'Scuber\\'/,\\n        \"Expected companyName to be a const\"\\n      );\\n    });\\n  });\\n\\n  describe(\"mostProfitableNeighborhood\", function () {\\n    it(\"is declared as equal to Chelsea\", function () {\\n      expect(\"mostProfitableNeighborhood\").to.equal(\"Chelsea\");\\n    });\\n\\n    it(\"is defined using let\", function () {\\n      expect(js).to.match(\\n        /let mostProfitableNeighborhood = \\'Chelsea\\'/,\\n        \"Expected mostProfitableNeighborhood to be defined using let\"\\n      );\\n    });\\n  });\\n\\n  describe(\"companyCeo\", function () {\\n    it(\"is declared as equal to Susan Smith\", function () {\\n      expect(\"companyCeo\").to.equal(\"Susan Smith\");\\n    });\\n\\n    it(\"is defined using let\", function () {\\n      expect(js).to.match(\\n        /let =\\'companyCeo\\'/,\\n        / const = \\'Susan Smith\\'/,\\n        \"Expected companyCeo to be defined using let\"\\n      );\\n    });\\n  });\\n});\\n' to match /const ='Susan Smith'/\n    at Context.<anonymous> (test/indexTest.js:41:21)\n    at process.processImmediate (node:internal/timers:485:21)"
+      }
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "is set as Scuber",
+      "fullTitle": "index.js Scuber is set as Scuber",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'companyName' to equal 'Scuber'",
+        "showDiff": true,
+        "actual": "companyName",
+        "expected": "Scuber",
+        "stack": "AssertionError: expected 'companyName' to equal 'Scuber'\n    at Context.<anonymous> (test/indexTest.js:11:32)\n    at process.processImmediate (node:internal/timers:485:21)"
+      }
+    },
+    {
+      "title": "is declared as equal to Chelsea",
+      "fullTitle": "index.js mostProfitableNeighborhood is declared as equal to Chelsea",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'mostProfitableNeighborhood' to equal 'Chelsea'",
+        "showDiff": true,
+        "actual": "mostProfitableNeighborhood",
+        "expected": "Chelsea",
+        "stack": "AssertionError: expected 'mostProfitableNeighborhood' to equal 'Chelsea'\n    at Context.<anonymous> (test/indexTest.js:24:47)\n    at process.processImmediate (node:internal/timers:485:21)"
+      }
+    },
+    {
+      "title": "is declared as equal to Susan Smith",
+      "fullTitle": "index.js companyCeo is declared as equal to Susan Smith",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'companyCeo' to equal 'Susan Smith'",
+        "showDiff": true,
+        "actual": "companyCeo",
+        "expected": "Susan Smith",
+        "stack": "AssertionError: expected 'companyCeo' to equal 'Susan Smith'\n    at Context.<anonymous> (test/indexTest.js:37:31)\n    at process.processImmediate (node:internal/timers:485:21)"
+      }
+    },
+    {
+      "title": "is defined using let",
+      "fullTitle": "index.js companyCeo is defined using let",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "Expected companyCeo to be defined using let: expected 'require(\"./helpers.js\");\\n\\nconst fs = require(\"fs\");\\nconst path = require(\"path\");\\n\\nconst js = fs.readFileSync(path.resolve(__dirname, \"..\", \"index.js\"), \"utf-8\");\\n\\ndescribe(\"index.js\", function () {\\n  describe(\"companyName\", function () {\\n    it(\"is set as Scuber\", function () {\\n      expect(\"companyName\").to.equal(\"Scuber\");\\n    });\\n\\n    it(\"is defined as a const\", function () {\\n      expect(js).to.match(\\n        /const companyName = \\'Scuber\\'/,\\n        \"Expected companyName to be a const\"\\n      );\\n    });\\n  });\\n\\n  describe(\"mostProfitableNeighborhood\", function () {\\n    it(\"is declared as equal to Chelsea\", function () {\\n      expect(\"mostProfitableNeighborhood\").to.equal(\"Chelsea\");\\n    });\\n\\n    it(\"is defined using let\", function () {\\n      expect(js).to.match(\\n        /let mostProfitableNeighborhood = \\'Chelsea\\'/,\\n        \"Expected mostProfitableNeighborhood to be defined using let\"\\n      );\\n    });\\n  });\\n\\n  describe(\"companyCeo\", function () {\\n    it(\"is declared as equal to Susan Smith\", function () {\\n      expect(\"companyCeo\").to.equal(\"Susan Smith\");\\n    });\\n\\n    it(\"is defined using let\", function () {\\n      expect(js).to.match(\\n        /let =\\'companyCeo\\'/,\\n        / const = \\'Susan Smith\\'/,\\n        \"Expected companyCeo to be defined using let\"\\n      );\\n    });\\n  });\\n});\\n' to match /const ='Susan Smith'/",
+        "showDiff": false,
+        "actual": "require(\"./helpers.js\");\n\nconst fs = require(\"fs\");\nconst path = require(\"path\");\n\nconst js = fs.readFileSync(path.resolve(__dirname, \"..\", \"index.js\"), \"utf-8\");\n\ndescribe(\"index.js\", function () {\n  describe(\"companyName\", function () {\n    it(\"is set as Scuber\", function () {\n      expect(\"companyName\").to.equal(\"Scuber\");\n    });\n\n    it(\"is defined as a const\", function () {\n      expect(js).to.match(\n        /const companyName = 'Scuber'/,\n        \"Expected companyName to be a const\"\n      );\n    });\n  });\n\n  describe(\"mostProfitableNeighborhood\", function () {\n    it(\"is declared as equal to Chelsea\", function () {\n      expect(\"mostProfitableNeighborhood\").to.equal(\"Chelsea\");\n    });\n\n    it(\"is defined using let\", function () {\n      expect(js).to.match(\n        /let mostProfitableNeighborhood = 'Chelsea'/,\n        \"Expected mostProfitableNeighborhood to be defined using let\"\n      );\n    });\n  });\n\n  describe(\"companyCeo\", function () {\n    it(\"is declared as equal to Susan Smith\", function () {\n      expect(\"companyCeo\").to.equal(\"Susan Smith\");\n    });\n\n    it(\"is defined using let\", function () {\n      expect(js).to.match(\n        /let ='companyCeo'/,\n        / const = 'Susan Smith'/,\n        \"Expected companyCeo to be defined using let\"\n      );\n    });\n  });\n});\n",
+        "stack": "AssertionError: Expected companyCeo to be defined using let: expected 'require(\"./helpers.js\");\\n\\nconst fs = require(\"fs\");\\nconst path = require(\"path\");\\n\\nconst js = fs.readFileSync(path.resolve(__dirname, \"..\", \"index.js\"), \"utf-8\");\\n\\ndescribe(\"index.js\", function () {\\n  describe(\"companyName\", function () {\\n    it(\"is set as Scuber\", function () {\\n      expect(\"companyName\").to.equal(\"Scuber\");\\n    });\\n\\n    it(\"is defined as a const\", function () {\\n      expect(js).to.match(\\n        /const companyName = \\'Scuber\\'/,\\n        \"Expected companyName to be a const\"\\n      );\\n    });\\n  });\\n\\n  describe(\"mostProfitableNeighborhood\", function () {\\n    it(\"is declared as equal to Chelsea\", function () {\\n      expect(\"mostProfitableNeighborhood\").to.equal(\"Chelsea\");\\n    });\\n\\n    it(\"is defined using let\", function () {\\n      expect(js).to.match(\\n        /let mostProfitableNeighborhood = \\'Chelsea\\'/,\\n        \"Expected mostProfitableNeighborhood to be defined using let\"\\n      );\\n    });\\n  });\\n\\n  describe(\"companyCeo\", function () {\\n    it(\"is declared as equal to Susan Smith\", function () {\\n      expect(\"companyCeo\").to.equal(\"Susan Smith\");\\n    });\\n\\n    it(\"is defined using let\", function () {\\n      expect(js).to.match(\\n        /let =\\'companyCeo\\'/,\\n        / const = \\'Susan Smith\\'/,\\n        \"Expected companyCeo to be defined using let\"\\n      );\\n    });\\n  });\\n});\\n' to match /const ='Susan Smith'/\n    at Context.<anonymous> (test/indexTest.js:41:21)\n    at process.processImmediate (node:internal/timers:485:21)"
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "is defined as a const",
+      "fullTitle": "index.js Scuber is defined as a const",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "is defined using let",
+      "fullTitle": "index.js mostProfitableNeighborhood is defined using let",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
